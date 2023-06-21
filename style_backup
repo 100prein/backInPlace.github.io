@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin:auto;
+}
+
+body {
+    background-color: rgb(255, 238, 188);
+    color: rgb(83, 73, 62);
+}
+
+.nav_section nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.nav_section nav ul li {
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+.link_style{
+    text-decoration: none;
+    color: rgb(177, 34, 34);
+}
+
+.link_style:hover {
+    text-decoration: overline;
+    color:black;
+    transition: 0.8s ease;
+}
+
+.main_intro_section {
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 238, 188, 0.7), rgba(231, 216, 147, 0.7)), url("./src/backinplace3.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 200vh;
+}
+
+.intro_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ 
+.intro_img {
+    width: 75%;
+    height: auto;
+    border-radius: 80px;
+}
+
+.intro_section_item {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.intro_section_item div p {
+    width: 300px;
+}
+
+.intro_section_item div h3 {
+    width: 300px;
+}
+
+/*.intro_img:hover {
+    width: 700px;
+    height: 550px;
+    padding: 10px;
+    border-radius: 80px;
+    /*transition: 0.7s ease-in-out;
+}*/
+
+@media only screen and (max-width: 600px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: black;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    .nav_section nav ul {
+        display: none;
+        background-color: rgb(229, 199, 141);
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: rgb(229, 199, 141);
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .intro_section {
+        display: block;
+        margin: auto;
+    }
+
+    .intro_img {
+        width: 75%;
+        margin: auto;
+    }
+    
+    .main_intro_section {
+        margin: auto;
+        width: auto;
+    }
+}
+

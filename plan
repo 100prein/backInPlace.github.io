@@ -1,0 +1,7 @@
+.theme_color {
+    color: rgb(123, 94, 44 );/* text active*/
+    color: rgb(83, 73, 62 );/*Text*/
+    color: rgb(255, 238, 188 );/* background active*/
+    color: rgb(231, 216, 147 );/*background*/
+}
+
